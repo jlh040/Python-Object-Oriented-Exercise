@@ -16,6 +16,7 @@ class WordFinder:
     
     def __repr__(self):
         """Create a string representation of the instance"""
+        
         return f'WordFinder(path = \'{self.path}\')'
 
     def get_words(self):
@@ -33,5 +34,6 @@ class WordFinder:
 
     def random(self):
         """Return a random word from the list of words."""
+
         return choice(self.list_of_words)
 
