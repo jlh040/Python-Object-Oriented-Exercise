@@ -2,17 +2,18 @@ from random import choice
 
 
 class WordFinder:
-    """Finds random words from a list of words."""
+    """Finds random words from a list of words.
+
+    Attributes
+    ------------------
+
+    path: str
+        Path to a file containing a list of words (one per line).
+    """
 
     def __init__(self, path):
         """Put the list of words as an attribute on the instance, and also print out
         the number of words that were read in.
-
-        Attributes
-        ------------------
-
-        path: str
-            Path to a file containing a list of words (one per line).
         """
 
         self.path = path
