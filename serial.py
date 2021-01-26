@@ -21,8 +21,16 @@ class SerialGenerator:
     """
 
     def __init__(self, start):
-        """Set the starting number"""
-        number = start
+        """Set the starting number."""
+        self.start = start
+        self.curr_number = start
 
-   
+    def generate(self):
+        """Return the next sequential number."""
+        print(self.curr_number)
+        self.curr_number += 1
+
+    def reset(self):
+        """Reset the number back to the original start number"""
+        self.curr_number = self.start
 
