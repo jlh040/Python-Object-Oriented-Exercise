@@ -13,6 +13,10 @@ class WordFinder:
         self.list_of_words = []
         self.get_words()
         self.print_num_of_words()
+    
+    def __repr__(self):
+        """Create a string representation of the instance"""
+        return f'WordFinder(path = \'{self.path}\')'
 
     def get_words(self):
         """Read the file, line by line, and add each word to the list of words."""
