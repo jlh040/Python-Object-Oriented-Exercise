@@ -9,6 +9,8 @@ class SpecialWordFinder(WordFinder):
         super().__init__(path)
 
     def __repr__(self):
+        """Create a string representation of the instance"""
+        
         return f'SpecialWordFinder(path = \'{self.path}\')'
     
     def get_words(self):
