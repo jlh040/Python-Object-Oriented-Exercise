@@ -22,18 +22,24 @@ class SerialGenerator:
 
     def __init__(self, start):
         """Set the starting number."""
+
         self.start = start
         self.curr_number = start
     
     def __repr__(self):
-        return f'SerialGenerator(start = {self.start})'
+        """Return a string representation of the instance."""
+
+        return f'''SerialGenerator(start = {self.start} next = {self.start + 1 if self.start == self.curr_number else 
+        self.curr_number})'''
 
     def generate(self):
         """Return the next sequential number."""
+
         print(self.curr_number)
         self.curr_number += 1
 
     def reset(self):
         """Reset the number back to the original start number"""
+
         self.curr_number = self.start
 
