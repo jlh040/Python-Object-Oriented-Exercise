@@ -1,0 +1,4 @@
+- ## These are a small set of exercises demonstrating my knowledge of object oriented programming using the Python language.
+  - ### serial.py is a small class that allows users to generate sequential numbers starting at any number that they set.
+  - ### wordfinder.py is another small class that allows users to read in a list of words from a file that they choose, and then generate a random word from that list.
+  - ### specialwordfinder.py is a subclass of wordfinder and will allow users to read in a list of words even if there are empty lines or lines that indicate a comment.
