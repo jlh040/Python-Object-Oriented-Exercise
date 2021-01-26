@@ -15,8 +15,8 @@ class WordFinder:
         self.print_num_of_words()
     
     def __repr__(self):
-        """Create a string representation of the instance"""
-        
+        """Create a string representation of the instance."""
+
         return f'WordFinder(path = \'{self.path}\')'
 
     def get_words(self):
