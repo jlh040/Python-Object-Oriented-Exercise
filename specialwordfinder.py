@@ -7,6 +7,9 @@ class SpecialWordFinder(WordFinder):
         """Get all of the attributes from WordFinder and put it on the instance."""
 
         super().__init__(path)
+
+    def __repr__(self):
+        return f'SpecialWordFinder(path = \'{self.path}\')'
     
     def get_words(self):
         """Get the words from the file and check for empty lines and octothorp
